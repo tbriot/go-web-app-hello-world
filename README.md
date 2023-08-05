@@ -15,3 +15,4 @@ Drawbacks:
 
 References:
 - [Containers Are Not VMs! Which Base Container Docker Images Should We Use?](https://www.youtube.com/watch?v=82ZCJw9poxM)
+- [Google "Distroless" images](https://github.com/GoogleContainerTools/distroless)

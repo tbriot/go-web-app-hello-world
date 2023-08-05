@@ -1,0 +1,17 @@
+FROM golang:1.20.7-alpine3.18 AS build-stage
+
+WORKDIR /app
+COPY go.mod ./
+RUN go mod download
+COPY *.go ./
+RUN CGO_ENABLED=0 GOOS=linux go build -o /hello-web-app
+
+FROM alpine:3.18.2 AS build-release-stage
+
+WORKDIR /
+
+COPY --from=build-stage /hello-web-app /hello-web-app
+
+EXPOSE 8080
+
+CMD ["/hello-web-app"]

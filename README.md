@@ -10,7 +10,7 @@ Reasons smaller is better:
 - less stuff installed = potential less licence issues
 
 Drawbacks:
-- less tool for logging in the container and debugging
+- less tool to log in the container and debugging
 - maybe some missing dependencies
 
 References:

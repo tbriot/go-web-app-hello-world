@@ -5,7 +5,7 @@ on:
     branches: [ main ]
 
 env:
-  AWS_REGION: ca-cental-1                     # set this to your preferred AWS region, e.g. us-west-1
+  AWS_REGION: ca-crental-1                     # set this to your preferred AWS region, e.g. us-west-1
   ECR_REPOSITORY: go-webapp-hello-world       # set this to your Amazon ECR repository name
   ECS_SERVICE: go-webapp-hello-world          # set this to your Amazon ECS service name
   ECS_CLUSTER: go-webapp-hello-world          # set this to your Amazon ECS cluster name

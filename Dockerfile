@@ -1,11 +1,17 @@
-FROM golang:1.20.7
+FROM golang:1.20.7 AS build-stage
 
 WORKDIR /app
 COPY go.mod ./
 RUN go mod download
 COPY *.go ./
-RUN CGO_ENABLED=0 GOOS=linux go build -o /hello-web-app
+RUN CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -ldflags="-w -s" -o /hello-web-app
+
+FROM scratch AS build-release-stage
+
+WORKDIR /
+
+COPY --from=build-stage /hello-web-app /hello-web-app
 
 EXPOSE 8080
 
-CMD ["/hello-web-app"]
+ENTRYPOINT ["/hello-web-app"]

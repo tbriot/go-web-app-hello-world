@@ -3,7 +3,7 @@
 # Docker images
 ![docker image size screenshot](./images/docker-image-size-comparison.png)
 
-Reasonsssmaller is better:
+Reasons smaller is better:
 - images storage costs $$$
 - image download/upload cost $$$ (network traffic)
 - faster image download = faster container startup

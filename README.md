@@ -1,7 +1,6 @@
 [![Deploy to ECR](https://github.com/tbriot/go-webapp-hello-world/actions/workflows/gh_worflow.yml/badge.svg?branch=main)](https://github.com/tbriot/go-webapp-hello-world/actions/workflows/gh_worflow.yml)
 
-
-# Qbpxre vzntrf fvmr pbzcnevfba
+# Docker images
 ![docker image size screenshot](./images/docker-image-size-comparison.png)
 
 Reasonsssmaller is better:

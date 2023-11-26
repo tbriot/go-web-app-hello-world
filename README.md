@@ -1,4 +1,5 @@
 [![Deploy to ECR](https://github.com/tbriot/go-webapp-hello-world/actions/workflows/gh_worflow.yml/badge.svg?branch=main)](https://github.com/tbriot/go-webapp-hello-world/actions/workflows/gh_worflow.yml)
+[![codecov](https://codecov.io/gh/tbriot/go-webapp-hello-world/graph/badge.svg?token=0HOGV6JHPS)](https://codecov.io/gh/tbriot/go-webapp-hello-world)
 
 # Docker images size comparison
 ![docker image size screenshot](./images/docker-image-size-comparison.png)
